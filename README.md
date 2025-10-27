@@ -1,13 +1,17 @@
 # FUCK Oppo QuickSearchBox 模块
 By 酷安福瑞@小黄泊
+
 功能描述
+
 本Magisk模块用于自动将`com.heytap.quicksearchbox`（全局搜索）应用多开分身到MultiApp分区，并冻结该分身应用。
 
 主要功能
+
 1. 自动多开分身: 在MultiApp分区创建全局搜索的分身应用
 2. 自动冻结: 使用root权限冻结分身应用，使其无法运行
 
 技术原理
+
 - 使用`pm create-user`创建MultiApp用户空间
 - 使用`pm install-existing`在分身用户中安装应用
 - 使用`pm disable`和`pm hide`冻结应用
